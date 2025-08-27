@@ -1,3 +1,41 @@
+# AppBiblioteca
+
+Una aplicación móvil híbrida desarrollada con React Native y Expo que permite buscar libros usando la Google Books API, ver detalles completos y guardar favoritos localmente.
+
+## ¿Cómo abrir el proyecto en otra computadora?
+
+1. **Clona el repositorio**
+   ```sh
+   git clone https://github.com/Notgustavoo/AppBiblioteca.git
+   cd AppBiblioteca
+   ```
+2. **Instala Node.js**  
+   Descarga e instala Node.js desde https://nodejs.org/ si no lo tienes.
+
+3. **Instala las dependencias**
+   ```sh
+   npm install
+   ```
+4. **Instala Expo CLI (si no tienes Expo Go en tu móvil)**
+   ```sh
+   npm install -g expo-cli
+   ```
+5. **Inicia el proyecto**
+   ```sh
+   npx expo start
+   ```
+6. **Abre la app en tu teléfono**
+   - Descarga la app Expo Go desde Google Play o App Store.
+   - Escanea el código QR que aparece en la terminal o en el navegador.
+     ¡Listo! Ya puedes usar la app en tu dispositivo.
+
+## 🚀 Instalación y Configuración
+
+### Prerrequisitos
+
+...
+
+````
 # 📚 Book Search App
 
 Una aplicación móvil híbrida desarrollada con React Native y Expo que permite buscar libros usando la Google Books API, ver detalles completos y guardar favoritos localmente.
@@ -50,34 +88,39 @@ Una aplicación móvil híbrida desarrollada con React Native y Expo que permite
    ```bash
    git clone [URL_DEL_REPOSITORIO]
    cd actividad6
-   ```
+````
 
 2. **Instalar dependencias**
+
    ```bash
    npm install
    ```
 
 3. **Verificar configuración de API**
    El proyecto ya incluye la API Key de Google Books configurada en:
+
    ```
    src/utils/config.js
    ```
-   
+
    **API Key incluida:** `AIzaSyAAjBJ55ujQWnask-GSS5yKBHpQ6xI-rPM`
 
 4. **Ejecutar la aplicación**
-   
+
    **Para desarrollo web:**
+
    ```bash
    npm run web
    ```
-   
+
    **Para dispositivo Android:**
+
    ```bash
    npm run android
    ```
-   
+
    **Para dispositivo iOS:**
+
    ```bash
    npm run ios
    ```
@@ -109,7 +152,9 @@ actividad6/
 ## 🔧 Configuración de API
 
 ### Google Books API
+
 La aplicación utiliza la Google Books API v1 con las siguientes características:
+
 - **Endpoint base**: `https://www.googleapis.com/books/v1/volumes`
 - **API Key**: Incluida en el proyecto (AIzaSyAAjBJ55ujQWnask-GSS5yKBHpQ6xI-rPM)
 - **Límite de resultados**: 20 libros por búsqueda
@@ -118,6 +163,7 @@ La aplicación utiliza la Google Books API v1 con las siguientes característica
 ## 💾 Almacenamiento Local
 
 La aplicación utiliza AsyncStorage para mantener los libros favoritos persistentemente:
+
 - **Clave de almacenamiento**: `@favorites`
 - **Formato**: Array de objetos JSON con información completa del libro
 - **Operaciones**: Agregar, quitar, verificar existencia y limpiar todos
@@ -134,6 +180,7 @@ La aplicación utiliza AsyncStorage para mantener los libros favoritos persisten
 ## 🧪 Funcionalidades Implementadas
 
 ### ✅ Requerimientos Cumplidos
+
 - [x] **Consumo de API compleja** - Google Books API con múltiples campos
 - [x] **Integración con almacenamiento local** - AsyncStorage para favoritos
 - [x] **Navegación entre pantallas** - React Navigation Stack
@@ -145,6 +192,7 @@ La aplicación utiliza AsyncStorage para mantener los libros favoritos persisten
 - [x] **Enlaces externos** - Vista previa e información adicional
 
 ### 🔄 Flujo de Usuario Completo
+
 1. Usuario ingresa término de búsqueda
 2. App consulta Google Books API
 3. Se muestran resultados en lista
@@ -164,7 +212,7 @@ La aplicación utiliza AsyncStorage para mantener los libros favoritos persisten
 ## 📱 Compatibilidad
 
 - **Plataformas**: iOS, Android, Web
-- **Versiones mínimas**: 
+- **Versiones mínimas**:
   - iOS 11+
   - Android API 21+
   - Navegadores modernos
@@ -190,7 +238,7 @@ npm run clear
 
 ## 📸 Capturas de Pantalla
 
-*Las capturas de pantalla se pueden agregar después de ejecutar la aplicación*
+_Las capturas de pantalla se pueden agregar después de ejecutar la aplicación_
 
 ## 🤝 Contribución
 
@@ -211,6 +259,7 @@ Este proyecto es parte de una actividad académica.
 ## 📞 Soporte
 
 Para dudas o problemas con la aplicación:
+
 1. Verificar que todas las dependencias estén instaladas
 2. Comprobar conexión a internet para API calls
 3. Revisar logs de consola para errores específicos
