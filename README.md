@@ -39,3 +39,6 @@ La aplicación utiliza la Google Books API v1 con las siguientes característica
 - **Campos incluidos**: Título, autores, descripción, fecha de publicación, calificaciones, imágenes, etc.
 
 ## Capturas de Pantalla
+
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/7038fffa-39c3-42f4-9bdf-549fb1a5ca00" />
+<img width="739" height="1600" alt="image" src="https://github.com/user-attachments/assets/872806db-e463-4a58-b5fa-2fa793109dea" />
